@@ -7,7 +7,7 @@ import gulpWebpack from 'webpack-stream';
 import plumber from 'gulp-plumber';
 import livereload from 'gulp-livereload';
 import args from './lib/args';
-import multivendor from './lib/multisrc';
+import {multivendor} from './lib/multisrc';
 
 const ENV = args.production ? 'production' : 'development';
 

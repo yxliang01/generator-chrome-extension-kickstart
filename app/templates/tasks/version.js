@@ -17,7 +17,7 @@ import git from 'gulp-git';
 import bump from 'gulp-bump';
 import filter from 'gulp-filter';
 import tagVersion from 'gulp-tag-version';
-import multivendor from './lib/multisrc';
+import {multivendor} from './lib/multisrc';
 
 
 function inc(importance) {

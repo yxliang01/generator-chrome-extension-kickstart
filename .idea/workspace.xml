@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be616d25-8b99-466c-9eb2-3ee7996e96e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/_locales/en/messages.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/fonts/gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/images/icon-128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/images/icon-16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/images/icon-19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/images/icon-38.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/pages/bookmarks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/pages/devtools.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/pages/history.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/pages/newtab.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/pages/options.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/pages/popup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/background.browseraction.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/background.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/background.pageaction.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/bookmarks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/contentscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/devtools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/history.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/newtab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/scripts/popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/bookmarks.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/contentscript.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/devtools.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/history.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/newtab.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/options.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/app/styles/popup.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.js" afterPath="$PROJECT_DIR$/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/chromereload.js" afterPath="$PROJECT_DIR$/app/templates/tasks/chromereload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/fonts.js" afterPath="$PROJECT_DIR$/app/templates/tasks/fonts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/images.js" afterPath="$PROJECT_DIR$/app/templates/tasks/images.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/locales.js" afterPath="$PROJECT_DIR$/app/templates/tasks/locales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/manifest.js" afterPath="$PROJECT_DIR$/app/templates/tasks/manifest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/pages.js" afterPath="$PROJECT_DIR$/app/templates/tasks/pages.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/scripts.js" afterPath="$PROJECT_DIR$/app/templates/tasks/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/styles.js" afterPath="$PROJECT_DIR$/app/templates/tasks/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/tasks/version.js" afterPath="$PROJECT_DIR$/app/templates/tasks/version.js" />
-    </list>
+    <list default="true" id="be616d25-8b99-466c-9eb2-3ee7996e96e4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/app/templates/tasks/version.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#412#436#0" expanded="true" />
@@ -155,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="786">
-              <caret line="529" column="4" lean-forward="true" selection-start-line="529" selection-start-column="4" selection-end-line="529" selection-end-column="4" />
+              <caret line="529" column="4" lean-forward="false" selection-start-line="529" selection-start-column="4" selection-end-line="529" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -1134,7 +1092,7 @@
         <state relative-caret-position="396">
           <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1237,7 +1195,7 @@
     <entry file="file://$PROJECT_DIR$/app/templates/tasks/version.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#412#436#0" expanded="true" />
@@ -1248,7 +1206,7 @@
     <entry file="file://$PROJECT_DIR$/app/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
-          <caret line="529" column="4" lean-forward="true" selection-start-line="529" selection-start-column="4" selection-end-line="529" selection-end-column="4" />
+          <caret line="529" column="4" lean-forward="false" selection-start-line="529" selection-start-column="4" selection-end-line="529" selection-end-column="4" />
           <folding />
         </state>
       </provider>

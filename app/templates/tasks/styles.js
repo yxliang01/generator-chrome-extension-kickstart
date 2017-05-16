@@ -7,7 +7,7 @@ import sass from 'gulp-sass';
 import cleanCSS from 'gulp-clean-css';
 import livereload from 'gulp-livereload';
 import args from './lib/args';
-import multivendor from './lib/multisrc';
+import {multivendor} from './lib/multisrc';
 
 gulp.task('styles:css', function() {
   return gulp.src(multivendor('styles/*.css'))
