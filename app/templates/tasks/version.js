@@ -17,13 +17,14 @@ import git from 'gulp-git';
 import bump from 'gulp-bump';
 import filter from 'gulp-filter';
 import tagVersion from 'gulp-tag-version';
+import multivendor from './lib/multisrc';
+
 
 function inc(importance) {
   // get all the files to bump version in
   return gulp.src([
-      'package.json',
-      'app/manifest.json'
-    ], {
+      'package.json'
+    ].concat(multivendor('manifest.json')), {
       base: "./"
     })
     // bump the version number in those files

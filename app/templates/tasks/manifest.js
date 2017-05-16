@@ -5,9 +5,12 @@ import jsonTransform from 'gulp-json-transform';
 import plumber from 'gulp-plumber';
 import applyBrowserPrefixesFor from './lib/applyBrowserPrefixesFor';
 import args from './lib/args';
+import multivendor from './lib/multisrc';
+import merge from 'gulp-merge-json';
 
 gulp.task('manifest', () => {
-  return gulp.src('app/manifest.json')
+  return gulp.src(multivendor('manifest.json'))
+    .pipe(merge())
     .pipe(plumber())
     .pipe(
       jsonTransform(

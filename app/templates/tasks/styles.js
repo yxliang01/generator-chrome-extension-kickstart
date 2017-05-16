@@ -7,9 +7,10 @@ import sass from 'gulp-sass';
 import cleanCSS from 'gulp-clean-css';
 import livereload from 'gulp-livereload';
 import args from './lib/args';
+import multivendor from './lib/multisrc';
 
 gulp.task('styles:css', function() {
-  return gulp.src('app/styles/*.css')
+  return gulp.src(multivendor('styles/*.css'))
     .pipe(gulpif(args.sourcemaps, sourcemaps.init()))
     .pipe(gulpif(args.production, cleanCSS()))
     .pipe(gulpif(args.sourcemaps, sourcemaps.write()))
@@ -18,7 +19,7 @@ gulp.task('styles:css', function() {
 });
 
 gulp.task('styles:less', function() {
-  return gulp.src('app/styles/*.less')
+  return gulp.src(multivendor('styles/*.less'))
     .pipe(gulpif(args.sourcemaps, sourcemaps.init()))
     .pipe(less({ paths: ['./app']}).on('error', function(error) {
       gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.message));
@@ -31,7 +32,7 @@ gulp.task('styles:less', function() {
 });
 
 gulp.task('styles:sass', function() {
-  return gulp.src('app/styles/*.scss')
+  return gulp.src(multivendor('styles/*.scss'))
     .pipe(gulpif(args.sourcemaps, sourcemaps.init()))
     .pipe(sass({ includePaths: ['./app']}).on('error', function(error) {
       gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.message));

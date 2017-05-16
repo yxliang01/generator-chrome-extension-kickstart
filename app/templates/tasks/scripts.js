@@ -7,11 +7,12 @@ import gulpWebpack from 'webpack-stream';
 import plumber from 'gulp-plumber';
 import livereload from 'gulp-livereload';
 import args from './lib/args';
+import multivendor from './lib/multisrc';
 
 const ENV = args.production ? 'production' : 'development';
 
 gulp.task('scripts', (cb) => {
-  return gulp.src('app/scripts/*.js')
+  return gulp.src(multivendor('scripts/*.js'))
     .pipe(plumber({
       errorHandler: function() {
         // Webpack will log the errors

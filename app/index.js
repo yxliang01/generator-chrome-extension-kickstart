@@ -419,8 +419,8 @@ module.exports = generators.Base.extend({
       this.manifest.items = (items.length > 0) ? ',\n' + items.join(',\n') : '';
 
       this.fs.copyTpl(
-        this.templatePath('app/manifest.json'),
-        this.destinationPath('app/manifest.json'), {
+        this.templatePath('app/common/manifest.json'),
+        this.destinationPath('app/common/manifest.json'), {
           items: this.manifest.items,
         }
       );
@@ -432,11 +432,11 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/pages/popup.html',   'app/pages/popup.html');
-      this.copy('app/scripts/popup.js',   'app/scripts/popup.js');
-      this.copy('app/styles/popup.scss',  'app/styles/popup.scss');
-      this.copy('app/images/icon-19.png', 'app/images/icon-19.png');
-      this.copy('app/images/icon-38.png', 'app/images/icon-38.png');
+      this.copy('app/common/pages/popup.html',   'app/common/pages/popup.html');
+      this.copy('app/common/scripts/popup.js',   'app/common/scripts/popup.js');
+      this.copy('app/common/styles/popup.scss',  'app/common/styles/popup.scss');
+      this.copy('app/common/images/icon-19.png', 'app/common/images/icon-19.png');
+      this.copy('app/common/images/icon-38.png', 'app/common/images/icon-38.png');
     },
 
     eventpage: function() {
@@ -448,7 +448,7 @@ module.exports = generators.Base.extend({
         backgroundjs = 'background.browseraction.js';
       }
 
-      this.copy('app/scripts/' + backgroundjs, 'app/scripts/background.js');
+      this.copy('app/common/scripts/' + backgroundjs, 'app/common/scripts/background.js');
     },
 
     options: function() {
@@ -456,9 +456,9 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/pages/options.html',  'app/pages/options.html');
-      this.copy('app/scripts/options.js',  'app/scripts/options.js');
-      this.copy('app/styles/options.scss', 'app/styles/options.scss');
+      this.copy('app/common/pages/options.html',  'app/common/pages/options.html');
+      this.copy('app/common/scripts/options.js',  'app/common/scripts/options.js');
+      this.copy('app/common/styles/options.scss', 'app/common/styles/options.scss');
     },
 
     devtools: function() {
@@ -466,9 +466,9 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/pages/devtools.html',  'app/pages/devtools.html');
-      this.copy('app/scripts/devtools.js',  'app/scripts/devtools.js');
-      this.copy('app/styles/devtools.scss', 'app/styles/devtools.scss');
+      this.copy('app/common/pages/devtools.html',  'app/common/pages/devtools.html');
+      this.copy('app/common/scripts/devtools.js',  'app/common/scripts/devtools.js');
+      this.copy('app/common/styles/devtools.scss', 'app/common/styles/devtools.scss');
     },
 
     history: function() {
@@ -476,9 +476,9 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/pages/history.html',  'app/pages/history.html');
-      this.copy('app/scripts/history.js',  'app/scripts/history.js');
-      this.copy('app/styles/history.scss', 'app/styles/history.scss');
+      this.copy('app/common/pages/history.html',  'app/common/pages/history.html');
+      this.copy('app/common/scripts/history.js',  'app/common/scripts/history.js');
+      this.copy('app/common/styles/history.scss', 'app/common/styles/history.scss');
     },
 
     bookmarks: function() {
@@ -486,9 +486,9 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/pages/bookmarks.html',  'app/pages/bookmarks.html');
-      this.copy('app/scripts/bookmarks.js',  'app/scripts/bookmarks.js');
-      this.copy('app/styles/bookmarks.scss', 'app/styles/bookmarks.scss');
+      this.copy('app/common/pages/bookmarks.html',  'app/common/pages/bookmarks.html');
+      this.copy('app/common/scripts/bookmarks.js',  'app/common/scripts/bookmarks.js');
+      this.copy('app/common/styles/bookmarks.scss', 'app/common/styles/bookmarks.scss');
     },
 
     newtab: function() {
@@ -496,9 +496,9 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/pages/newtab.html',  'app/pages/newtab.html');
-      this.copy('app/scripts/newtab.js',  'app/scripts/newtab.js');
-      this.copy('app/styles/newtab.scss', 'app/styles/newtab.scss');
+      this.copy('app/common/pages/newtab.html',  'app/common/pages/newtab.html');
+      this.copy('app/common/scripts/newtab.js',  'app/common/scripts/newtab.js');
+      this.copy('app/common/styles/newtab.scss', 'app/common/styles/newtab.scss');
     },
 
     contentscript: function() {
@@ -506,14 +506,14 @@ module.exports = generators.Base.extend({
         return;
       }
 
-      this.copy('app/scripts/contentscript.js',  'app/scripts/contentscript.js');
-      this.copy('app/styles/contentscript.scss', 'app/styles/contentscript.scss');
+      this.copy('app/common/scripts/contentscript.js',  'app/common/scripts/contentscript.js');
+      this.copy('app/common/styles/contentscript.scss', 'app/common/styles/contentscript.scss');
     },
 
     locales: function() {
       this.fs.copyTpl(
-        this.templatePath('app/_locales/en/messages.json'),
-        this.destinationPath('app/_locales/en/messages.json'), {
+        this.templatePath('app/common/_locales/en/messages.json'),
+        this.destinationPath('app/common/_locales/en/messages.json'), {
           name        : this.manifest.name,
           shortName   : this.manifest.shortName,
           description : this.manifest.description,
@@ -523,9 +523,9 @@ module.exports = generators.Base.extend({
     },
 
     assets: function() {
-      this.copy('app/images/icon-16.png',  'app/images/icon-16.png');
-      this.copy('app/images/icon-128.png', 'app/images/icon-128.png');
-      this.copy('app/fonts/gitkeep',       'app/fonts/.gitkeep');
+      this.copy('app/common/images/icon-16.png',  'app/common/images/icon-16.png');
+      this.copy('app/common/images/icon-128.png', 'app/common/images/icon-128.png');
+      this.copy('app/common/fonts/gitkeep',       'app/common/fonts/.gitkeep');
     }
   },
 

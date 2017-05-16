@@ -33,13 +33,24 @@ gulp.task('chromereload', (cb) => {
 
   // The watching for javascript files is done by webpack
   // Check out ./tasks/scripts.js for further info.
-  gulp.watch('app/manifest.json', ['manifest']);
-  gulp.watch('app/styles/**/*.css', ['styles:css']);
-  gulp.watch('app/styles/**/*.less', ['styles:less']);
-  gulp.watch('app/styles/**/*.scss', ['styles:sass']);
-  gulp.watch('app/pages/**/*.html', ['pages']);
-  gulp.watch('app/_locales/**/*', ['locales']);
-  gulp.watch('app/images/**/*', ['images']);
-  gulp.watch('app/fonts/**/*.{woff,ttf,eot,svg}', ['fonts']);
+  gulp.watch('app/common/manifest.json', ['manifest']);
+  gulp.watch('app/common/styles/**/*.css', ['styles:css']);
+  gulp.watch('app/common/styles/**/*.less', ['styles:less']);
+  gulp.watch('app/common/styles/**/*.scss', ['styles:sass']);
+  gulp.watch('app/common/pages/**/*.html', ['pages']);
+  gulp.watch('app/common/_locales/**/*', ['locales']);
+  gulp.watch('app/common/images/**/*', ['images']);
+  gulp.watch('app/common/fonts/**/*.{woff,ttf,eot,svg}', ['fonts']);
+
+  //  Chrome specific
+
+  gulp.watch('app/chrome/manifest.json', ['manifest']);
+  gulp.watch('app/chrome/styles/**/*.css', ['styles:css']);
+  gulp.watch('app/chrome/styles/**/*.less', ['styles:less']);
+  gulp.watch('app/chrome/styles/**/*.scss', ['styles:sass']);
+  gulp.watch('app/chrome/pages/**/*.html', ['pages']);
+  gulp.watch('app/chrome/_locales/**/*', ['locales']);
+  gulp.watch('app/chrome/images/**/*', ['images']);
+  gulp.watch('app/chrome/fonts/**/*.{woff,ttf,eot,svg}', ['fonts']);
 
 });
